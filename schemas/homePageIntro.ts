@@ -13,7 +13,7 @@ export default defineType({
     defineField({
       name: 'title2',
       title: 'Title2',
-      type: 'string',
+      type: 'localeString',
     }),
     defineField({
       name: 'year',
@@ -31,17 +31,17 @@ export default defineType({
     defineField({
       name: 'experienceTitle',
       title: 'Experience Title',
-      type: 'string',
+      type: 'localeString',
     }),
     defineField({
       name: 'experienceTitle2',
       title: 'Experience Title2',
-      type: 'string',
+      type: 'localeString',
     }),
     defineField({
       name: 'experienceDescription',
       title: 'Experience Description',
-      type: 'text',
+      type: 'localeText',
     }),
     defineField({
       name: 'brands',

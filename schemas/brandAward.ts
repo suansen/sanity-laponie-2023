@@ -1,39 +1,38 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'review',
-  title: 'Review',
+  name: 'brandAward',
+  title: 'Brand Award',
   type: 'document',
   fields: [
     defineField({
       name: 'name',
-      title: 'Customer Name',
+      title: 'Name',
       type: 'string',
     }),
     defineField({
-      name: 'customerReview',
-      title: 'Customer Review',
+      name: 'description',
+      title: 'Description',
       type: 'text',
     }),
     defineField({
-      name: 'customerImage',
-      title: 'Customer image',
+      name: 'year',
+      title: 'Year',
+      type: 'number',
+    }),
+    defineField({
+      name: 'mainImage',
+      title: 'Main image',
       type: 'image',
       options: {
         hotspot: true,
       },
     }),
     defineField({
-      name: 'rating',
-      title: 'Rating',
-      type: 'number',
-      validation: (Rule) => Rule.required().min(1).max(5),
-    }),
-    defineField({
       name: 'brand',
       title: 'Brand',
       type: 'reference',
-      description: 'Review for which brand?',
+      description: 'Award for which brand?',
       weak: false,
       to: [{type: 'brand'}],
       validation: (Rule) => Rule.required(),

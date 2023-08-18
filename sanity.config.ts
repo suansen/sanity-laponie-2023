@@ -3,6 +3,11 @@ import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 
+const supportedLanguages = [
+  {id: 'en', title: 'English', isDefault: true},
+  {id: 'cn', title: 'Chinese'},
+]
+
 export default defineConfig({
   name: 'default',
   title: 'sanity-laponie-2023',

@@ -8,12 +8,12 @@ export default defineType({
     defineField({
       name: 'title',
       title: 'Title',
-      type: 'string',
+      type: 'localeString',
     }),
     defineField({
       name: 'description',
       title: 'Description',
-      type: 'text',
+      type: 'localeText',
     }),
     defineField({
       name: 'mainImage',
@@ -22,6 +22,11 @@ export default defineType({
       options: {
         hotspot: true,
       },
+    }),
+    defineField({
+      name: 'link',
+      title: 'Link',
+      type: 'string',
     }),
     defineField({
       name: 'slug',
