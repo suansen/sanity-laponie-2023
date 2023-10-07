@@ -7,8 +7,13 @@ export default defineType({
   fields: [
     defineField({
       name: 'name',
-      title: 'Category Name',
+      title: 'Sanity Name',
       type: 'string',
+    }),
+    defineField({
+      name: 'categoryName',
+      title: 'Category Name',
+      type: 'localeString',
     }),
     defineField({
       name: 'description',

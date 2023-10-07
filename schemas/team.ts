@@ -7,7 +7,12 @@ export default defineType({
   fields: [
     defineField({
       name: 'name',
-      title: 'Name',
+      title: 'Sanity Display Name',
+      type: 'string',
+    }),
+    defineField({
+      name: 'teamMemberName',
+      title: 'Team Member Name',
       type: 'localeString',
     }),
     defineField({

@@ -7,8 +7,13 @@ export default defineType({
   fields: [
     defineField({
       name: 'name',
-      title: 'Name',
+      title: 'Sanity Name',
       type: 'string',
+    }),
+    defineField({
+      name: 'productName',
+      title: 'Product Name',
+      type: 'localeString',
     }),
     defineField({
       name: 'productImage',
@@ -37,7 +42,7 @@ export default defineType({
       name: 'description',
       title: 'Description',
       description: 'Description of the product',
-      type: 'localeText',
+      type: 'localeBlockContent',
     }),
     defineField({
       name: 'productTag',

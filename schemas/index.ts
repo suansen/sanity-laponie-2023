@@ -18,22 +18,30 @@ import brandAward from './brandAward'
 import treatment from './treatment'
 import localeString from './localeString'
 import localeText from './localeText'
+import localBlockContent from './localBlockContent'
+import termsAndConditions from './termsAndConditions'
+import privacyPolicy from './privacyPolicy'
+import blockContent from './blockContent'
 
 export const schemaTypes = [
   localeString,
   localeText,
+  localBlockContent,
+  blockContent,
   brand,
+  brandAward,
   highlight,
-  homePageIntro,
   review,
   team,
-  aboutUsPage,
   support,
   contact,
-  contactUsPage,
-  ingredient,
   product,
   productCategory,
-  brandAward,
+  ingredient,
   treatment,
+  homePageIntro,
+  aboutUsPage,
+  contactUsPage,
+  termsAndConditions,
+  privacyPolicy,
 ]
