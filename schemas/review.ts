@@ -36,7 +36,7 @@ export default defineType({
       description: 'Review for which brand?',
       weak: false,
       to: [{type: 'brand'}],
-      validation: (Rule) => Rule.required(),
+      // validation: (Rule) => Rule.required(),
     }),
   ],
 })

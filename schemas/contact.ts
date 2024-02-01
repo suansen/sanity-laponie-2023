@@ -27,6 +27,7 @@ export default defineType({
       options: {
         list: ['sales', 'brands'],
       },
+      initialValue: 'sales',
     }),
     defineField({
       name: 'email',

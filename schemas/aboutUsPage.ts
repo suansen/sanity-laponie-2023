@@ -20,12 +20,7 @@ export default defineType({
       title: 'Intro Description',
       type: 'localeText',
     }),
-    {
-      title: 'Rich text example',
-      name: 'myRichTextExample',
-      type: 'array',
-      of: [{type: 'block'}],
-    },
+
     defineField({
       name: 'introImage',
       title: 'Intro image',
@@ -34,6 +29,31 @@ export default defineType({
         hotspot: true,
       },
     }),
+    defineField({
+      name: 'introTitle2',
+      title: 'Intro Title 2',
+      type: 'localeString',
+    }),
+    defineField({
+      name: 'introSubtitle2',
+      title: 'Intro Subtitle 2',
+      type: 'localeString',
+    }),
+    defineField({
+      name: 'introDescription2',
+      title: 'Intro Description 2',
+      type: 'localeText',
+    }),
+
+    defineField({
+      name: 'introImage2',
+      title: 'Intro image 2',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+
     defineField({
       name: 'storyTitle',
       title: 'Story Title',
